@@ -62,7 +62,7 @@ def main() -> int:
 
     try:
         result = Pipeline().run(
-            resume_path=args.resume, csv_path=args.csv, config_path=args.config, csv_row_index=args.csv_rows
+            resume_path=args.resume, csv_path=args.csv, config_path=args.config, csv_row_index=args.csv_row
         )
 
     except Exception as exc:
