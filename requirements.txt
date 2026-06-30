@@ -1,0 +1,18 @@
+# Core
+pydantic>=2.0
+python-dotenv
+
+# PDF extraction
+pdfplumber
+
+# Date parsing
+python-dateutil
+
+# Phone normalization
+phonenumbers
+
+# CSV / data
+pandas
+
+# Google Gemini LLM
+google-genai

@@ -1,0 +1,45 @@
+{
+  "fields": [
+    {
+      "path": "candidate_full_name",
+      "from": "full_name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "path": "contact_email",
+      "from": "emails[0]",
+      "type": "string",
+      "required": true
+    },
+    {
+      "path": "contact_phone",
+      "from": "phones[0]",
+      "type": "string",
+      "normalize": "E164"
+    },
+    {
+      "path": "current_city",
+      "from": "location.city",
+      "type": "string"
+    },
+    {
+      "path": "current_country",
+      "from": "location.country",
+      "type": "string"
+    },
+    {
+      "path": "job_title",
+      "from": "headline",
+      "type": "string"
+    },
+    {
+      "path": "experience_years",
+      "from": "years_experience",
+      "type": "number"
+    }
+  ],
+  "include_confidence": true,
+  "include_provenance": false,
+  "on_missing": "null"
+}

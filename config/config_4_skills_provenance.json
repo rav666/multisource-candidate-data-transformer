@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "path": "full_name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "path": "skill_names",
+      "from": "skills[].name",
+      "type": "string[]",
+      "normalize": "canonical"
+    },
+    {
+      "path": "skill_confidences",
+      "from": "skills[].confidence",
+      "type": "number[]"
+    },
+    {
+      "path": "skill_sources",
+      "from": "skills[].sources",
+      "type": "string[][]"
+    }
+  ],
+  "include_confidence": true,
+  "include_provenance": true,
+  "on_missing": "null"
+}

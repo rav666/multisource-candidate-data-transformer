@@ -1,0 +1,31 @@
+{
+  "fields": [
+    {
+      "path": "full_name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "path": "primary_email",
+      "from": "emails[0]",
+      "type": "string",
+      "required": true
+    },
+    {
+      "path": "primary_phone",
+      "from": "phones[0]",
+      "type": "string",
+      "required": true,
+      "normalize": "E164"
+    },
+    {
+      "path": "linkedin",
+      "from": "links.linkedin",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "include_confidence": false,
+  "include_provenance": false,
+  "on_missing": "error"
+}
