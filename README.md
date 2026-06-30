@@ -21,7 +21,7 @@ python main.py --resume path/to/resume.pdf --csv path/to/candidates.csv
 
 # 4. Run with a custom projection config
 python main.py --resume path/to/resume.pdf --csv path/to/candidates.csv \
-               --config config_example.json
+               --config config/config_example.json
 
 # 5. Save output to a file
 python main.py --resume path/to/resume.pdf --csv path/to/candidates.csv \
